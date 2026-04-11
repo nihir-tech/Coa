@@ -1,0 +1,46 @@
+
+MVI A,05H
+MVI B,03H
+CMP B
+
+
+
+MVI A,05H
+CPI 05H
+
+
+
+MVI A,0FH
+MVI B,03H
+ANA B
+
+
+
+MVI A,0FH
+ANI 03H
+
+
+
+MVI A,0FH
+MVI B,03H
+XRA B
+
+
+
+
+mvi a,0fh
+xri 03h
+
+
+
+
+mvi a,0fh
+mvi d,03h
+ora b
+
+
+
+
+mvi a,0fh
+ori 03h
+hlt
