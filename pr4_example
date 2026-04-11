@@ -1,0 +1,57 @@
+substaction
+MVI a,05h
+MVI b,03h
+SUb b
+
+addition
+mvi a,05h
+mvi b,03h
+add b
+hlt
+
+
+addition with carry
+mvi a,05h
+mvi b,03h
+stc
+adc b
+hlt
+
+substractiom  with borrow
+mvi a,05h
+mvi b,03h
+stc
+sbb b
+hlt
+
+immediate addition
+mvi a,05h
+adi 03h
+hlt
+
+immediate addition with carry
+mvi a,05h
+stc
+aci o3h
+hlt
+
+immediate substaracion
+mvi a,05h
+svl 02h
+hlt
+
+immediate substraction with borrow
+mvi a,05h
+stv
+sbi 02h
+hlt
+
+increment
+mvi b,05h
+inr b
+hlt
+
+decrement
+mvi b,05h
+dcr b
+hlt

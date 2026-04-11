@@ -1,0 +1,20 @@
+Lxi h,var
+MOV c,m ;conter
+inx h
+lxi d,varr4
+back: Mov a,m
+stax d
+inx h
+dcx d
+dcr c
+jnz back
+hlt
+var: db 04h
+var1: db 03h
+var2: db 07h
+var3: db 08h
+var4: db 05h
+varr1: db 00h
+varr2: db 00h
+varr3: db 00h
+varr4: db 00h

@@ -1,0 +1,16 @@
+lxi h,0000H
+mov b,m
+mvi d,01h
+fact: call mul
+dcr b
+jnz fact
+inx h
+mov m,d
+hlt
+mul: mov e,b
+xra a
+m1: add d
+dcr e
+jnz m1
+mov d,a
+ret
